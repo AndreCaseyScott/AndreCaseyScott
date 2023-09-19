@@ -1,22 +1,18 @@
 ---
-title: "Markdown Syntax"
-date: 2021-08-01
+title: "Design & Media Center"
+date: 2016-06-01
+lastmod: 2017-06-15
 draft: false
-project_tags: ["markdown"]
-status: "evergreen"
+project_tags: ["print design", "web design", "marketing materials", "cymk production", "branding"]
+status: "archive"
 weight: 2
-summary: "Example of markdown syntax you can use to edit your content"
+summary: "PLACEHOLDER"
 links:
     external_link:
         text: "Some external link"
         icon: "fas fa-external-link-alt"
         href: "#"
         weight: 1
-    another_link:
-        text: "Another github link"
-        icon: "fab alt brands fa-github"
-        href: "#"
-        weight: 2
 ---
 
 This is just an intro paragraph to show how the initial letter of each article or post will look.
