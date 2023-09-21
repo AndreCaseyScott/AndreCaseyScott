@@ -3,7 +3,7 @@ title: "HIV Alliance"
 date: 2017-05-10
 lastmod: 2023-09-19
 draft: false
-project_tags: ["web design", "development", "branding", "hosting"]
+project_tags: ["website design", "web development", "branding", "hosting"]
 status: "live"
 weight: 2
 summary: "PLACEHOLDER"

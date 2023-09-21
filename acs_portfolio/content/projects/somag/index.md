@@ -2,7 +2,7 @@
 title: "Southern Oregon Auto Glass"
 date: 2023-08-01
 draft: false
-project_tags: ["web design", "development"]
+project_tags: ["website design", "web development"]
 status: "live"
 weight: 2
 summary: "PLACEHOLDER"

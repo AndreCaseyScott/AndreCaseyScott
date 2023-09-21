@@ -3,7 +3,7 @@ title: "Lincoln City Cultural Center"
 date: 2017-09-10
 lastmod: 2023-09-19
 draft: false
-project_tags: ["print design", "web design", "development", "marketing materials", "marketing strategy", "social media", "hosting", "branding"]
+project_tags: ["print design", "website design", "web development", "marketing materials", "social media", "hosting", "branding"]
 status: "live"
 weight: 2
 summary: "PLACEHOLDER"

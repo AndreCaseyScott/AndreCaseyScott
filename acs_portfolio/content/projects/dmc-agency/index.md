@@ -3,7 +3,7 @@ title: "Design & Media Center"
 date: 2016-06-01
 lastmod: 2017-06-15
 draft: false
-project_tags: ["print design", "web design", "marketing materials", "cymk production", "branding"]
+project_tags: ["print design", "website design", "marketing materials", "print production", "branding"]
 status: "archive"
 weight: 2
 summary: "PLACEHOLDER"

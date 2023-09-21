@@ -3,7 +3,7 @@ title: "Denali Magazine"
 date: 2016-06-01
 lastmod: 2016-10-15
 draft: false
-project_tags: ["print design", "cymk production"]
+project_tags: ["print design", "print production"]
 status: "archive"
 weight: 2
 summary: "PLACEHOLDER"

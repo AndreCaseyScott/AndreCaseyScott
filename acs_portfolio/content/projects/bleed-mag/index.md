@@ -3,7 +3,7 @@ title: "The Bleed Magazine"
 date: 2016-03-01
 lastmod: 2017-06-15
 draft: false
-project_tags: ["print design", "web design", "cymk production", "branding"]
+project_tags: ["print design", "website design", "print production", "branding"]
 status: "archive"
 weight: 2
 summary: "PLACEHOLDER"

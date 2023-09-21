@@ -3,7 +3,7 @@ title: "Newman United Methodist Church"
 date: 2019-08-01
 lastmod: 2023-09-19
 draft: false
-project_tags: ["print design", "web design"]
+project_tags: ["print design", "website design"]
 status: "live"
 weight: 2
 summary: "PLACEHOLDER"

@@ -3,7 +3,7 @@ title: "Trinity United Methodist Church"
 date: 2017-08-01
 lastmod: 2019-05-01
 draft: false
-project_tags: ["print design", "web design", "marketing materials"]
+project_tags: ["print design", "website design", "marketing materials"]
 status: "live"
 weight: 2
 summary: "PLACEHOLDER"

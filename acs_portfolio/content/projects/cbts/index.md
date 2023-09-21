@@ -3,7 +3,7 @@ title: "Chapel by the Sea Presbyterian Church"
 date: 2020-05-10
 lastmod: 2022-05-10
 draft: false
-project_tags: ["print design", "web design", "development", "branding", "user personas", "marketing materials"]
+project_tags: ["print design", "website design", "web development", "branding", "user personas", "marketing materials"]
 status: "archive"
 weight: 2
 summary: "PLACEHOLDER"
