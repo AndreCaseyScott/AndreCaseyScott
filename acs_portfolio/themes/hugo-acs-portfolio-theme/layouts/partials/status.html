@@ -1,0 +1,10 @@
+{{ with .Params.status }}
+    {{ if eq "live" . }}
+    <span class="status">Live 🔗</span>
+    {{ else if eq "archive" . }}
+    <span class="status">Archive 🏛</span>
+    {{ else if eq "wip" . }}
+    <span class="status">Work-In-Progress 🧑‍💻</span>
+    {{ else }}
+    {{ end }}
+{{ end }}
