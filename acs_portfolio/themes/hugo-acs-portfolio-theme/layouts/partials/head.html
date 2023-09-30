@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/all.min.css">
     <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="/css/lightbox.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     {{ $options := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
     {{ with resources.Get "sass/acs_styles.scss" | toCSS $options | minify | fingerprint }}
