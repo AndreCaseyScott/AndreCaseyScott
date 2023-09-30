@@ -1,0 +1,65 @@
+{{ $pageform := (index .context.Page.Params.forms .form)}}
+<aside>
+  <h2>Interested? Let's Chat.</h2>
+<!--The form starts here-->
+<form name="{{ .Title }}" id="contact-form" class="form autofill" method="post" action="{{ $pageform.endpoint_url }}" >
+  
+  {{ range $pageform.fields }}
+
+    {{ if .required }}{{ .Scratch.Set "requiredstar" "*" }}{{ else }}{{ .Scratch.Set "requiredstar" "" }}{{ end }}
+    {{ if .required }}{{ .Scratch.Set "requiredtext" "required" }}{{ else }}{{ .Scratch.Set "requiredtext" "" }}{{ end }}
+
+    {{ if eq .input_type "title" }}
+      <h3>{{ .label }}</h3>
+    {{ else if eq .input_type "textarea" }}
+      <div>
+        <label class="{{ if $pageform.placeholders }}sr-only{{ end }}" for="{{ .name }}">{{ .label }}{{ .Scratch.Get "requiredstar" }}</label>
+        <textarea name="{{ .name }}" id="{{ .name }}" cols="30" rows="10" {{ if $pageform.placeholders }}placeholder="{{ .placeholder }}{{ .Scratch.Get "requiredstar" }}"{{ end }} {{ .Scratch.Get "requiredtext" }}></textarea>
+      </div>
+    {{ else if eq .input_type "radio" }}
+      <div class="radio">
+        <label><input type="radio" name="{{ .name }}" value="{{ .label }}" {{ .Scratch.Get "requiredtext" }}>{{ .label }}</label>
+      </div>
+    {{ else if eq .input_type "checkbox" }}
+      <div class="checkbox">
+        <label><input type="checkbox" name="{{ .name }}" value="{{ .label }}" {{ .Scratch.Get "requiredtext" }}>{{ .label }}</label>
+      </div>
+    {{ else if eq .input_type "submit" }}
+      <div>
+        <input type="{{ .input_type }}" value="{{ .label }}" class="button" />
+      </div>
+    {{ else }}
+      {{ if eq .name "name" }}
+        <!-- Name -->
+        <div class="half">
+            <label class="{{ if $pageform.placeholders }}sr-only{{ end }}" for="firstname">First name{{ .Scratch.Get "requiredstar" }}</label>
+            <input type="text" name="firstname" id="firstname" {{ if $pageform.placeholders }}placeholder="First name{{ .Scratch.Get "requiredstar" }}"{{ end }} {{ .Scratch.Get "requiredtext" }}>
+        </div>
+        <div class="half">
+          <label class="{{ if $pageform.placeholders }}sr-only{{ end }}" for="lastname">Last name{{ .Scratch.Get "requiredstar" }}</label>
+          <input type="text" name="lastname" id="lastname" {{ if $pageform.placeholders }}placeholder="Last Name{{ .Scratch.Get "requiredstar" }}"{{ end }} {{ .Scratch.Get "requiredtext" }}>
+        </div>
+      {{ else if eq .name "address" }}
+        <!-- Address -->
+        <div>
+            <label class="{{ if $pageform.placeholders }}sr-only{{ end }}" for="address">Address{{ .Scratch.Get "requiredstar" }}</label>
+            <input type="text" name="address" id="address" {{ if $pageform.placeholders }}placeholder="Address{{ .Scratch.Get "requiredstar" }}"{{ end }} {{ .Scratch.Get "requiredtext" }}>
+        </div>
+        <div class="half">
+            <label class="{{ if $pageform.placeholders }}sr-only{{ end }}" for="city">City{{ .Scratch.Get "requiredstar" }}</label>
+            <input type="text" name="city" id="city" {{ if $pageform.placeholders }}placeholder="City{{ .Scratch.Get "requiredstar" }}"{{ end }} {{ .Scratch.Get "requiredtext" }}>
+        </div>
+        <div class="half">
+            <label class="{{ if $pageform.placeholders }}sr-only{{ end }}" for="postalcode">Postal code{{ .Scratch.Get "requiredstar" }}</label>
+            <input type="text" name="postalcode" id="postalcode" {{ if $pageform.placeholders }}placeholder="Postal code{{ .Scratch.Get "requiredstar" }}"{{ end }} {{ .Scratch.Get "requiredtext" }}>
+        </div>
+      {{ else }}
+          <div>
+              <label class="{{ if $pageform.placeholders }}sr-only{{ end }}" for="{{ .name }}">{{ .label }}{{ .Scratch.Get "requiredstar" }}</label>
+              <input type="{{ .input_type }}" name="{{ .name }}" id="{{ .name }}" {{ if $pageform.placeholders }}placeholder="{{ .placeholder }}{{ .Scratch.Get "requiredstar" }}"{{ end }} {{ .Scratch.Get "requiredtext" }}>
+          </div>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</form>
+</aside>
