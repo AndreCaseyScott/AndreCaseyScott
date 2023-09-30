@@ -1,12 +1,16 @@
 ---
 title: "Lincoln City Cultural Center"
 date: 2017-09-10
-lastmod: 2023-09-19
+lastmod: 2023-09-29
 draft: false
 project_tags: ["print design", "website design", "web development", "marketing materials", "social media", "hosting", "branding"]
 status: "live"
 weight: 2
 summary: "PLACEHOLDER"
+role: "Marketing Consultant & Web Designer"
+client: "Lincoln City Cultural Center"
+location: "Lincoln City, Oregon"
+industry: "Arts & Culture"
 links:
     external_link:
         text: "Link to Live Website"
@@ -15,113 +19,62 @@ links:
         weight: 1
 ---
 
-This is just an intro paragraph to show how the initial letter of each article or post will look.
-The rest of the page shows you the markdown syntax supported by this theme: headings, typography, images, blockquote, lists, code blocks and tables.
-For more markdown syntax guide, please see this [link](https://www.markdownguide.org/basic-syntax/).
+[ Intro Paragraphs ]
 
---- 
+{ TL;DR Link to Work Samples }
 
-# Heading level 1
-## Heading level 2 {#custom-id-2}
-### Heading level 3 
-#### Heading level 4
+## Client
 
----
+[ about client ]
 
-This is the first line **with bold text**.  
-This is the second line *with italic text*.  
-This is the third line  ***with bold italic text***.  
-This is the fourth line ~~with strikethrough text~~.  
-This is the fifth line [with a link to heading level 2](#custom-id-2).  
-This is the sixth line with emoji 🥳.  
+[ what they do ]
 
-First Term
-: This is the definition of the first term.
+[ location based ]
 
-Second Term
-: This is one definition of the second term.
-: This is another definition of the second term.
-
-Here's a simple footnote,[^1] and here's a longer one.[^bignote]
-
-[^1]: This is the first footnote.
-
-[^bignote]: Here's one with multiple paragraphs and code.
-
-    Indent paragraphs to include them in the footnote.
-
-    `{ my code }`
-
-    Add as many paragraphs as you like.
-
---- 
-
-> This is a blockquote.
-
-> This is a blockquote
->
-> with multiple paragraphs
-
-> This is a
->
->> nested blockquote
-
-> ### This is a header level 3
->
-> - First item
-> - Second item.
->
->  *Italic* and also **bold** are supported.
-
----
-
-{{< figure src="jessica-weiller-GAw5wFLVWVo-unsplash.jpg" title="Just chilling on my favorite tree in San Diego Zoo" width="100%" attr="https://unsplash.com/@jweiller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">}}
+## Problem
 
 
-For more image processing methods, you can create your own shortcode. Check this [link](https://gohugo.io/content-management/image-processing/) to see what you can do.
 
---- 
+## Role
 
-Ordered list:
+[ Marketing Assistance ]
 
-1. First item
-2. Second item
-3. Third item
-    1. Indented item
-    2. Indented item
-4. Fourth item
+[ Design and Developing Website ]
 
-Unordered lists:
-- First item
-- Second item
-- Third item
-    - Indented item
-    - Indented item
-- Fourth item
+[ Hosting and Website Maintenance] 
 
---- 
+## Solution
 
-This is an `inline code block`. See below for a multi-line code block with syntax highlighting.
+[ marketing materials and branding ]
 
-```python
-# Python syntax highlighting
-def it_is_true():
-    return True
+[ new website ]
 
-def it_is_false():
-    return False
-```
+[ additional landing pages ]
 
-```css
-/* CSS syntax highlighting */
-html {
-    text-align: left;
-}
-```
+[ hosting and performance upgrades ]
 
----
+## Process
 
-| Column 1 | Column 2 |
-|:---------|:---------|
-| Cell 1,1 | Cell 1,2 | 
-| Cell 2,1 | Cell 2,2 | 
+
+
+## Results 
+
+[ 30% Increase in donations after launch ]
+
+[ new revenue stream going forward ]
+
+[ promote captial campaigns and fundraisers ]
+
+## Key Observations
+
+[ what I learned? ]
+
+## Conclusion 
+
+
+
+## Work Samples
+
+[ gallery of impressive samples of work with client ]
+
+{{< image_gallery gallery_dir="lccc-samples" >}}
