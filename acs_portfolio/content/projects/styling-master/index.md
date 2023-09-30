@@ -6,7 +6,7 @@ draft: false
 project_tags: ["print design", "website design"]
 status: "live"
 weight: 2
-summary: "EXAMPLE FOR STYLING ELEMENTS"
+summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum turpis orci, laoreet eget pretium sed, lobortis a orci. Duis cursus placerat lacus. Maecenas non condimentum orci."
 links:
     external_link:
         text: "Link to Live Website"
