@@ -21,18 +21,20 @@
     </section>
     <section class="row justify-content-center mb-5">
         <div class="col-12">
-            <p class="page-date text-start m-0 fs-6">
-                {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-                {{ with .Date }}
-                    Created {{ .Format $dateFormat }} - 
-                {{ end }}
-                Last updated: {{ .Lastmod.Format $dateFormat }}
-            </p>
+            <div class="col-sm-4">
+                {{ partial "status.html" . }}
+            </div>
+            <div>
+                <p class="page-date text-start m-0 fs-6">
+                    {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+                    {{ with .Date }}
+                        Created {{ .Format $dateFormat }} - 
+                    {{ end }}
+                    Last updated: {{ .Lastmod.Format $dateFormat }}
+                </p>
+            </div>
             <hr class="dropdown-divider">
             <div class="row justify-content-between">
-                <div class="col-sm-4">
-                    {{ partial "status.html" . }}
-                </div>
                 <div class="col-sm-8" style="text-align: right;">
                     {{ with .Params.tags }}
                     {{ range . }}
@@ -55,16 +57,25 @@
     </section>
 
     <section class="container-fluid py-2">
-        {{ if or (isset .Params "publication") (isset .Params "role") (isset .Params "byline") }}
+        {{ if or (isset .Params "publication") (isset .Params "role") (isset .Params "byline") (isset .Params "client") (isset .Params "location") (isset .Params "industry") }}
         <ul class="page-attributes list-inline bg-dark text-white mb-4 p-3 rounded-3">
             {{ with .Params.publication }}
                 <li class="list-inline-item"><span class="h6">Publication:</span> {{ . }}</li>
+            {{ end }}
+            {{ with .Params.client }}
+                <li class="list-inline-item"><span class="h6">Client:</span> {{ . }}</li>
             {{ end }}
             {{ with .Params.role }}
                 <li class="list-inline-item"><span class="h6">Role:</span> {{ . }}</li>
             {{ end }}
             {{ with .Params.byline }}
                 <li class="list-inline-item"><span class="h6">Byline:</span> {{ . }}</li>
+            {{ end }}
+            {{ with .Params.industry }}
+                <li class="list-inline-item"><span class="h6">Industry:</span> {{ . }}</li>
+            {{ end }}
+            {{ with .Params.location }}
+                <li class="list-inline-item"><span class="h6">Location:</span> {{ . }}</li>
             {{ end }}
         </ul>
         {{ end }}

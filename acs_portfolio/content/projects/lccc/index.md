@@ -21,7 +21,7 @@ links:
 
 [ Intro Paragraphs ]
 
-{ TL;DR Link to Work Samples }
+[Jump to Work Samples](#work-samples)
 
 ## Client
 
